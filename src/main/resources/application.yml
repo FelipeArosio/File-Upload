@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: MySpringBootApplication
+  profiles:
+    active: default
+  devtools:
+    restart:
+      enabled: true
+    livereload:
+      enabled: false
+  datasource:
+    url: jdbc:mysql://localhost:3306/mydb
+    username: root
+    password:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+
+server:
+  port: 8080
+
+file:
+  upload-dir: /path/to/your/upload/directory
